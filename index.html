@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Js-throttle-debounce : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Js-throttle-debounce</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/emn178/js-throttle-debounce">View on GitHub</a>
+
+          <h1 id="project_title">Js-throttle-debounce</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/emn178/js-throttle-debounce/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/emn178/js-throttle-debounce/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="js-throttle-debounce" class="anchor" href="#js-throttle-debounce" aria-hidden="true"><span class="octicon octicon-link"></span></a>js-throttle-debounce</h1>
+
+<p>A javascript prototype plugin provides throttle and debounce methods.<br>
+This refer to <a href="https://github.com/cowboy/jquery-throttle-debounce">jquery-throttle-debounce</a></p>
+
+<h2>
+<a id="download" class="anchor" href="#download" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download</h2>
+
+<p><a href="https://raw.github.com/emn178/js-throttle-debounce/master/build/js-throttle-debounce.min.js">Compress</a><br>
+<a href="https://raw.github.com/emn178/js-throttle-debounce/master/src/js-throttle-debounce.js">Uncompress</a></p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>You can also install js-throttle-debounce by using Bower.</p>
+
+<pre><code>bower install js-throttle-debounce
+</code></pre>
+
+<h2>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h2>
+
+<p><a href="http://emn178.github.io/js-throttle-debounce/samples/demo/">Demo</a></p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>You could use like this:
+JavaScript</p>
+
+<div class="highlight highlight-JavaScript"><pre><span class="pl-st">function</span> <span class="pl-en">yourMethod</span>() {
+
+}
+<span class="pl-s">var</span> throttle <span class="pl-k">=</span> yourMethod.throttle();
+<span class="pl-s">var</span> throttleIgnoreLast <span class="pl-k">=</span> yourMethod.throttle(<span class="pl-c1">500</span>, <span class="pl-c1">true</span>);
+<span class="pl-s">var</span> debounce <span class="pl-k">=</span> yourMethod.debounce(<span class="pl-c1">100</span>);</pre></div>
+
+<h3>
+<a id="methods" class="anchor" href="#methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Methods</h3>
+
+<h4>
+<a id="functionthrottledelay-ignorelast" class="anchor" href="#functionthrottledelay-ignorelast" aria-hidden="true"><span class="octicon octicon-link"></span></a>Function.throttle([delay], [ignoreLast])</h4>
+
+<p>Create a throttle method.</p>
+
+<h5>
+<a id="delay-number-default-100" class="anchor" href="#delay-number-default-100" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>delay: <code>Number</code> (default: <code>100</code>)</em>
+</h5>
+
+<p>Set delay in milliseconds.</p>
+
+<h5>
+<a id="ignorelast-boolean-default-false" class="anchor" href="#ignorelast-boolean-default-false" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>ignoreLast: <code>Boolean</code> (default: <code>false</code>)</em>
+</h5>
+
+<p>Set true that last trigger will not be executed.</p>
+
+<h4>
+<a id="functiondebouncedelay" class="anchor" href="#functiondebouncedelay" aria-hidden="true"><span class="octicon octicon-link"></span></a>Function.debounce([delay])</h4>
+
+<p>Create a debounce method.</p>
+
+<h5>
+<a id="delay-number-default-100-1" class="anchor" href="#delay-number-default-100-1" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>delay: <code>Number</code> (default: <code>100</code>)</em>
+</h5>
+
+<p>Set delay in milliseconds.</p>
+
+<h2>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h2>
+
+<h3>
+<a id="ajax-search" class="anchor" href="#ajax-search" aria-hidden="true"><span class="octicon octicon-link"></span></a>AJAX Search</h3>
+
+<p>HTML</p>
+
+<div class="highlight highlight-HTML"><pre>&lt;<span class="pl-ent">input</span> <span class="pl-e">type</span>=<span class="pl-s1"><span class="pl-pds">"</span>text<span class="pl-pds">"</span></span> <span class="pl-e">onchange</span>=<span class="pl-s1"><span class="pl-pds">"</span>search()<span class="pl-pds">"</span></span> /&gt;</pre></div>
+
+<p>JavaScript</p>
+
+<div class="highlight highlight-JavaScript"><pre><span class="pl-st">function</span> <span class="pl-en">ajaxSearch</span>() {
+  <span class="pl-c">// ... do AJAX search by keyword</span>
+}
+search <span class="pl-k">=</span> ajaxSearch.debounce();</pre></div>
+
+<h3>
+<a id="resize" class="anchor" href="#resize" aria-hidden="true"><span class="octicon octicon-link"></span></a>Resize</h3>
+
+<p>JavaScript</p>
+
+<div class="highlight highlight-JavaScript"><pre><span class="pl-st">function</span> <span class="pl-en">updateLayouts</span>() {
+  <span class="pl-c">// ... render something when resizing</span>
+}
+<span class="pl-s3">window</span>.onresize <span class="pl-k">=</span> updateLayouts.throttle();</pre></div>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>The project is released under the <a href="http://www.opensource.org/licenses/MIT">MIT license</a>.</p>
+
+<h2>
+<a id="contact" class="anchor" href="#contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact</h2>
+
+<p>The project's website is located at <a href="https://github.com/emn178/js-throttle-debounce">https://github.com/emn178/js-throttle-debounce</a><br>
+Author: <a href="mailto:emn178@gmail.com">emn178@gmail.com</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Js-throttle-debounce maintained by <a href="https://github.com/emn178">emn178</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-44208259-3");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
