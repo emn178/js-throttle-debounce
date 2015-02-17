@@ -34,8 +34,11 @@
         <h1>
 <a id="js-throttle-debounce" class="anchor" href="#js-throttle-debounce" aria-hidden="true"><span class="octicon octicon-link"></span></a>js-throttle-debounce</h1>
 
-<p>A javascript prototype plugin provides throttle and debounce methods.<br>
-This refer to <a href="https://github.com/cowboy/jquery-throttle-debounce">jquery-throttle-debounce</a></p>
+<p><a href="https://travis-ci.org/emn178/js-throttle-debounce"><img src="https://travis-ci.org/emn178/js-throttle-debounce.svg?branch=master" alt="Build Status"></a>
+<a href="https://coveralls.io/r/emn178/js-throttle-debounce?branch=master"><img src="https://coveralls.io/repos/emn178/js-throttle-debounce/badge.svg?branch=master" alt="Coverage Status"></a><br>
+<a href="https://nodei.co/npm/js-throttle-debounce/"><img src="https://nodei.co/npm/js-throttle-debounce.png?stars&amp;downloads" alt="NPM"></a><br>
+A javascript prototype plugin provides throttle and debounce methods.<br>
+This refers to <a href="https://github.com/cowboy/jquery-throttle-debounce">jquery-throttle-debounce</a></p>
 
 <h2>
 <a id="download" class="anchor" href="#download" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download</h2>
@@ -51,6 +54,11 @@ This refer to <a href="https://github.com/cowboy/jquery-throttle-debounce">jquer
 <pre><code>bower install js-throttle-debounce
 </code></pre>
 
+<p>For node.js, you can use this command to install:</p>
+
+<pre><code>npm install js-throttle-debounce
+</code></pre>
+
 <h2>
 <a id="demo" class="anchor" href="#demo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo</h2>
 
@@ -63,7 +71,7 @@ This refer to <a href="https://github.com/cowboy/jquery-throttle-debounce">jquer
 JavaScript</p>
 
 <div class="highlight highlight-JavaScript"><pre><span class="pl-st">function</span> <span class="pl-en">yourMethod</span>() {
-
+  <span class="pl-c">// ...</span>
 }
 <span class="pl-s">var</span> throttle <span class="pl-k">=</span> yourMethod.throttle();
 <span class="pl-s">var</span> throttleIgnoreLast <span class="pl-k">=</span> yourMethod.throttle(<span class="pl-c1">500</span>, <span class="pl-c1">true</span>);
