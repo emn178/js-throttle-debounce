@@ -1,5 +1,5 @@
 /*
- * js-throttle-debounce v0.1.0
+ * js-throttle-debounce v0.1.1
  * https://github.com/emn178/js-throttle-debounce
  *
  * Copyright 2015, emn178@gmail.com

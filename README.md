@@ -11,9 +11,12 @@ This refers to [jquery-throttle-debounce](https://github.com/cowboy/jquery-throt
 
 ## Installation
 You can also install js-throttle-debounce by using Bower.
-```
-bower install js-throttle-debounce
-```
+
+    bower install js-throttle-debounce
+
+For node.js, you can use this command to install:
+
+    npm install js-throttle-debounce
 
 ## Demo
 [Demo](http://emn178.github.io/js-throttle-debounce/samples/demo/)
@@ -23,7 +26,7 @@ You could use like this:
 JavaScript
 ```JavaScript
 function yourMethod() {
-  
+  // ...
 }
 var throttle = yourMethod.throttle();
 var throttleIgnoreLast = yourMethod.throttle(500, true);

@@ -7,7 +7,7 @@ before_install:
   - npm install mocha -g
   - npm install coveralls -g
   - npm install mocha-lcov-reporter -g
-script: npm run-script coveralls
+after_success: npm run-script coveralls
 branches:
   only:
     - master

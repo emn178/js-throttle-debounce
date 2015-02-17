@@ -1,6 +1,6 @@
 {
   "name": "js-throttle-debounce",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A javascript prototype plugin provides throttle and debounce methods.",
   "main": "src/js-throttle-debounce.js",
   "devDependencies": {
