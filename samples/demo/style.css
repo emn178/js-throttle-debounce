@@ -1,0 +1,63 @@
+body, html, h1, h2 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+#header {
+  background-color: #2d2d2d;
+  color: white;
+  text-align: center;
+}
+
+#description {
+  margin: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#controlls {
+  text-align: center;
+}
+
+#area {
+  height: 150px;
+  width: 170px;
+  border: 1px dashed black;
+  margin: 10px auto;
+  line-height: 150px;
+}
+
+#items {
+  overflow: auto;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.item {
+  float: left;
+  height: 15px;
+  width: 15px;
+  background-color: green;
+  margin: 3px;
+}
+
+#footer {
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #777;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+#code-block {
+  margin: 10px auto;
+  width: 80%;
+}
+
+#code-block h3 {
+  text-align: center;
+}
