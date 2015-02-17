@@ -1,0 +1,9 @@
+{
+  "name": "js-throttle-debounce",
+  "version": "0.1.0",
+  "main": ["build/js-throttle-debounce.min.js"],
+  "ignore": [
+    "samples",
+    "tests"
+  ]
+}
