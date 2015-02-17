@@ -1,6 +1,9 @@
 # js-throttle-debounce
+[![Build Status](https://travis-ci.org/emn178/js-throttle-debounce.svg?branch=master)](https://travis-ci.org/emn178/js-throttle-debounce)
+[![Coverage Status](https://coveralls.io/repos/emn178/js-throttle-debounce/badge.svg?branch=master)](https://coveralls.io/r/emn178/js-throttle-debounce?branch=master)  
+[![NPM](https://nodei.co/npm/js-throttle-debounce.png?stars&downloads)](https://nodei.co/npm/js-throttle-debounce/)  
 A javascript prototype plugin provides throttle and debounce methods.  
-This refer to [jquery-throttle-debounce](https://github.com/cowboy/jquery-throttle-debounce)
+This refers to [jquery-throttle-debounce](https://github.com/cowboy/jquery-throttle-debounce)
 
 ## Download
 [Compress](https://raw.github.com/emn178/js-throttle-debounce/master/build/js-throttle-debounce.min.js)  
